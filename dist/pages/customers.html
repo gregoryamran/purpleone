@@ -142,11 +142,11 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Dashboard</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Customers Form</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                  <li class="breadcrumb-item active" aria-current="page">Customer</li>
                 </ol>
               </div>
             </div>
@@ -159,87 +159,183 @@
         <div class="app-content">
           <!--begin::Container-->
           <div class="container-fluid">
-            <!--begin::Row-->
-            <div class="row">
-              <!--begin::Col-->
-              <div class="col-lg-3 col-6">
-                <!--begin::Small Box Widget 1-->
-                <div class="small-box text-bg-primary">
-                  <div class="inner">
-                    <h3>150</h3>
-                    <p>New Orders</p>
-                  </div>
-                  <svg
-                    class="small-box-icon"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
-                    ></path>
-                  </svg>
-                  <a
-                    href="#"
-                    class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
-                  >
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-                <!--end::Small Box Widget 1-->
-              </div>
-              <!--end::Col-->
-              <div class="col-lg-3 col-6">
-                <!--begin::Small Box Widget 2-->
-                <div class="small-box text-bg-success">
-                  <div class="inner">
-                    <h3>53<sup class="fs-5">%</sup></h3>
-                    <p>Bounce Rate</p>
-                  </div>
-                  <svg
-                    class="small-box-icon"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z"
-                    ></path>
-                  </svg>
-                  <a
-                    href="#"
-                    class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
-                  >
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-                <!--end::Small Box Widget 2-->
-              </div>
-              <!--end::Col-->
-
-            </div>
-            <!--end::Row-->
-            <!--begin::Row-->
+          
             <div class="row">
               <!-- Start col -->
               <div class="col-lg-7 connectedSortable">
-                <div class="card mb-4">
-                  <div class="card-header"><h3 class="card-title">Sales Value</h3></div>
-                  <div class="card-body"><div id="revenue-chart"></div></div>
+                <div class="container mt-5">
+                  <!-- <h2 class="mb-4">Customer Form</h2> -->
+                  <form>
+                    <div class="form-group">
+                      <label for="customerCompanyName">Customer Company Name</label>
+                      <input type="text" class="form-control" id="customerCompanyName" placeholder="Enter customer company name">
+                    </div>
+                    <div class="form-group">
+                      <label for="customerGstin">Customer GSTIN</label>
+                      <input type="text" class="form-control" id="customerGstin" placeholder="Enter customer GSTIN">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group">
+                      <label for="website">Website</label>
+                      <input type="text" class="form-control" id="website" placeholder="Enter website">
+                    </div>
+                    <div class="form-group">
+                      <label for="city">City</label>
+                      <input type="text" class="form-control" id="city" placeholder="Enter city">
+                    </div>
+                    <div class="form-group">
+                      <label for="state">State</label>
+                        <select class="form-control" id="state" >
+                        <option>Select state</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>Chhattisgarh</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharashtra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Uttarakhand</option>
+                        <option>West Bengal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="zone">Zone</label>
+                      <select class="form-control" id="zone">
+                        <option>Select zone</option>
+                        <option>North</option>
+                        <option>South</option>
+                        <option>East</option>
+                        <option>West</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="size">Size</label>
+                      <select class="form-control" id="size">
+                        <option>Select size</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="quantityPerMonth">Quantity per Month</label>
+                      <input type="number" class="form-control" id="quantityPerMonth" placeholder="Enter quantity per month">
+                    </div>
+                    <div class="form-group">
+                      <label for="quantityCanTap">Quantity Can Tap</label>
+                      <input type="number" class="form-control" id="quantityCanTap" placeholder="Enter quantity can tap">
+                    </div>
+                    <div class="form-group">
+                      <label for="monthlyQtySupplied2324">Monthly Qty Supplied 23-24</label>
+                      <input type="number" class="form-control" id="monthlyQtySupplied2324"
+                        placeholder="Enter monthly qty supplied 23-24">
+                    </div>
+                    <div class="form-group">
+                      <label for="industry">Industry</label>
+                      <input type="text" class="form-control" id="industry" placeholder="Enter industry">
+                    </div>
+                    <div class="form-group">
+                      <label for="frequency">Frequency</label>
+                      <select class="form-control" id="frequency">
+                        <option>Select frequency</option>
+                        <option>Regular</option>
+                        <option>Not Regular </option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="fromWarehouse">From Warehouse</label>
+                      <input type="text" class="form-control" id="fromWarehouse" placeholder="Enter from warehouse">
+                    </div>
+                    <div class="form-group">
+                      <label for="addressAndPincode">Address and Pincode</label>
+                      <input type="text" class="form-control" id="addressAndPincode" placeholder="Enter address and pincode">
+                    </div>
+                    <div class="form-group">
+                      <label for="mergedSupplier">Merged Supplier</label>
+                      <input type="text" class="form-control" id="mergedSupplier" placeholder="Enter merged supplier">
+                    </div>
+                    <div class="form-group">
+                      <label for="keyPersonContact">Key Person Contact</label>
+                      <input type="text" class="form-control" id="keyPersonContact" placeholder="Enter key person contact">
+                    </div>
+                    <div class="form-group">
+                      <label for="keyPersonName">Key Person Name</label>
+                      <input type="text" class="form-control" id="keyPersonName" placeholder="Enter key person name">
+                    </div>
+                    <div class="form-group">
+                      <label for="productsEnquiry">Products Enquiry</label>
+                      <input type="text" class="form-control" id="productsEnquiry" placeholder="Enter products enquiry">
+                    </div>
+                    <div class="form-group">
+                      <label for="quantityRequirement">Quantity Requirement</label>
+                      <input type="number" class="form-control" id="quantityRequirement" placeholder="Enter quantity requirement">
+                    </div>
+                    <div class="form-group">
+                      <label for="converted">Converted</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="converted" id="convertedYes" value="Yes">
+                          <label class="form-check-label" for="convertedYes">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="converted" id="convertedNo" value="No" checked>
+                          <label class="form-check-label" for="convertedNo">
+                            No
+                          </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="contactedDetails">Contacted Details</label>
+                      <select class="form-control" id="contactedDetails">
+                        <option>Select contacted details</option>
+                        <option>Email</option>
+                        <option>Phone</option>
+                        <option>Meeting</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="remarks">Remarks</label>
+                      <textarea class="form-control" id="remarks" rows="3" placeholder="Enter remarks"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="me">ME</label>
+                      <select class="form-control" id="me">
+                        <option>Select ME</option>
+                        <option>ME1</option>
+                        <option>ME2</option>
+                        <option>ME3</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
                 </div>
-                <!-- /.card -->
-
               </div>
-              <!-- /.Start col -->
-              <!-- Start col -->
-              <div class="col-lg-5 connectedSortable">
- 
-              </div>
-              <!-- /.Start col -->
             </div>
-            <!-- /.row (main row) -->
+            <!--end::Row-->
+          
           </div>
           <!--end::Container-->
         </div>
