@@ -3,7 +3,7 @@
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>CRM | Dashboard</title>
+    <!-- <title>CRM | Customer</title> -->
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="AdminLTE v4 | Dashboard" />
@@ -109,18 +109,42 @@
                   <p>Dashboard </p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="./customers.html" class="nav-link">
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
-                  <p>Customers </p>
+                  <p>
+                    Customers
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="./customers-view.html" class="nav-link">
-                  <i class="nav-icon bi bi-box-seam-fill"></i>
-                  <p>Customers </p>
-                </a>
-              </li>              
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="customers.html" class="nav-link active">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>New Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="customers-view.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>View / Search Customer </p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="customers-contact-view.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Contacts</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="customers-contact-add.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Contacts Add </p>
+                    </a>
+                  </li>
+                </ul>
+              </li> 
+                               
               <li class="nav-item">
                 <a href="./leads.html" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
