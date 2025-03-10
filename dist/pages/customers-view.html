@@ -109,6 +109,7 @@
                   <p>Dashboard </p>
                 </a>
               </li>
+              
               <li class="nav-item">
                 <a href="./customers.html" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
@@ -172,172 +173,73 @@
                 <div class="container mt-5">
                   <!-- <h2 class="mb-4">Customer Form</h2> -->
                   <form>
-                    <div class="form-group">
-                      <label for="customerCompanyName">Customer Company Name</label>
-                      <input type="text" class="form-control" id="customerCompanyName" placeholder="Enter customer company name">
-                    </div>
-                    <div class="form-group">
-                      <label for="customerGstin">Customer GSTIN</label>
-                      <input type="text" class="form-control" id="customerGstin" placeholder="Enter customer GSTIN">
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">Phone</label>
-                      <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
-                    </div>
-                    <div class="form-group">
-                      <label for="website">Website</label>
-                      <input type="text" class="form-control" id="website" placeholder="Enter website">
-                    </div>
-                    <div class="form-group">
-                      <label for="city">City</label>
-                      <input type="text" class="form-control" id="city" placeholder="Enter city">
-                    </div>
-                    <div class="form-group">
-                      <label for="state">State</label>
-                        <select class="form-control" id="state" >
-                        <option>Select state</option>
-                        <option>Andhra Pradesh</option>
-                        <option>Arunachal Pradesh</option>
-                        <option>Assam</option>
-                        <option>Bihar</option>
-                        <option>Chhattisgarh</option>
-                        <option>Goa</option>
-                        <option>Gujarat</option>
-                        <option>Haryana</option>
-                        <option>Himachal Pradesh</option>
-                        <option>Jharkhand</option>
-                        <option>Karnataka</option>
-                        <option>Kerala</option>
-                        <option>Madhya Pradesh</option>
-                        <option>Maharashtra</option>
-                        <option>Manipur</option>
-                        <option>Meghalaya</option>
-                        <option>Mizoram</option>
-                        <option>Nagaland</option>
-                        <option>Odisha</option>
-                        <option>Punjab</option>
-                        <option>Rajasthan</option>
-                        <option>Sikkim</option>
-                        <option>Tamil Nadu</option>
-                        <option>Telangana</option>
-                        <option>Tripura</option>
-                        <option>Uttar Pradesh</option>
-                        <option>Uttarakhand</option>
-                        <option>West Bengal</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="zone">Zone</label>
-                      <select class="form-control" id="zone">
-                        <option>Select zone</option>
-                        <option>North</option>
-                        <option>South</option>
-                        <option>East</option>
-                        <option>West</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="size">Size</label>
-                      <select class="form-control" id="size">
-                        <option>Select size</option>
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="quantityPerMonth">Quantity per Month</label>
-                      <input type="number" class="form-control" id="quantityPerMonth" placeholder="Enter quantity per month">
-                    </div>
-                    <div class="form-group">
-                      <label for="quantityCanTap">Quantity Can Tap</label>
-                      <input type="number" class="form-control" id="quantityCanTap" placeholder="Enter quantity can tap">
-                    </div>
-                    <div class="form-group">
-                      <label for="monthlyQtySupplied2324">Monthly Qty Supplied 23-24</label>
-                      <input type="number" class="form-control" id="monthlyQtySupplied2324"
-                        placeholder="Enter monthly qty supplied 23-24">
-                    </div>
-                    <div class="form-group">
-                      <label for="industry">Industry</label>
-                      <input type="text" class="form-control" id="industry" placeholder="Enter industry">
-                    </div>
-                    <div class="form-group">
-                      <label for="frequency">Frequency</label>
-                      <select class="form-control" id="frequency">
-                        <option>Select frequency</option>
-                        <option>Regular</option>
-                        <option>Not Regular </option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="fromWarehouse">From Warehouse</label>
-                      <input type="text" class="form-control" id="fromWarehouse" placeholder="Enter from warehouse">
-                    </div>
-                    <div class="form-group">
-                      <label for="addressAndPincode">Address and Pincode</label>
-                      <input type="text" class="form-control" id="addressAndPincode" placeholder="Enter address and pincode">
-                    </div>
-                    <div class="form-group">
-                      <label for="mergedSupplier">Merged Supplier</label>
-                      <input type="text" class="form-control" id="mergedSupplier" placeholder="Enter merged supplier">
-                    </div>
-                    <div class="form-group">
-                      <label for="keyPersonContact">Key Person Contact</label>
-                      <input type="text" class="form-control" id="keyPersonContact" placeholder="Enter key person contact">
-                    </div>
-                    <div class="form-group">
-                      <label for="keyPersonName">Key Person Name</label>
-                      <input type="text" class="form-control" id="keyPersonName" placeholder="Enter key person name">
-                    </div>
-                    <div class="form-group">
-                      <label for="productsEnquiry">Products Enquiry</label>
-                      <input type="text" class="form-control" id="productsEnquiry" placeholder="Enter products enquiry">
-                    </div>
-                    <div class="form-group">
-                      <label for="quantityRequirement">Quantity Requirement</label>
-                      <input type="number" class="form-control" id="quantityRequirement" placeholder="Enter quantity requirement">
-                    </div>
-                    <div class="form-group">
-                      <label for="converted">Converted</label>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="converted" id="convertedYes" value="Yes">
-                          <label class="form-check-label" for="convertedYes">
-                            Yes
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="converted" id="convertedNo" value="No" checked>
-                          <label class="form-check-label" for="convertedNo">
-                            No
-                          </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="contactedDetails">Contacted Details</label>
-                      <select class="form-control" id="contactedDetails">
-                        <option>Select contacted details</option>
-                        <option>Email</option>
-                        <option>Phone</option>
-                        <option>Meeting</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="remarks">Remarks</label>
-                      <textarea class="form-control" id="remarks" rows="3" placeholder="Enter remarks"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label for="me">ME</label>
-                      <select class="form-control" id="me">
-                        <option>Select ME</option>
-                        <option>LME</option>
-                        <option>MSE</option>
-                        <option>Indo</option>
-                        <option>MSE+Indo</option>
-                      </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+                    <!-- table for customer form    -->
+                                         <form>
+                      <!-- table for customer form -->
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Customer Company Name</th>
+                            <th scope="col">Customer GSTIN</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Website</th>
+                            <th scope="col">City</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Zone</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Quantity per Month</th>
+                            <th scope="col">Quantity Can Tap</th>
+                            <th scope="col">Monthly Qty Supplied 23-24</th>
+                            <th scope="col">Industry</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">From Warehouse</th>
+                            <th scope="col">Address and Pincode</th>
+                            <th scope="col">Merged Supplier</th>
+                            <th scope="col">Key Person Contact</th>
+                            <th scope="col">Key Person Name</th>
+                            <th scope="col">Products Enquiry</th>
+                            <th scope="col">Quantity Requirement</th>
+                            <th scope="col">Converted</th>
+                            <th scope="col">Contacted Details</th>
+                            <th scope="col">Remarks</th>
+                            <th scope="col">ME</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Example row -->
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Example Company</td>
+                            <td>1234567890</td>
+                            <td>123-456-7890</td>
+                            <td>www.example.com</td>
+                            <td>Example City</td>
+                            <td>Example State</td>
+                            <td>North</td>
+                            <td>Medium</td>
+                            <td>1000</td>
+                            <td>500</td>
+                            <td>12000</td>
+                            <td>Manufacturing</td>
+                            <td>Regular</td>
+                            <td>Example Warehouse</td>
+                            <td>123 Example St, 12345</td>
+                            <td>Example Supplier</td>
+                            <td>123-456-7890</td>
+                            <td>John Doe</td>
+                            <td>Product A, Product B</td>
+                            <td>2000</td>
+                            <td>Yes</td>
+                            <td>Email</td>
+                            <td>Example remarks</td>
+                            <td>LME</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    </form>
+                  </form>>
                 </div>
               </div>
             </div>
