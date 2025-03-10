@@ -3,7 +3,7 @@
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- <title>CRM | Dashboard</title> -->
+    <title>CRM | Dashboard</title>
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="AdminLTE v4 | Dashboard" />
@@ -96,81 +96,51 @@
         <!--begin::Sidebar Wrapper-->
         <div class="sidebar-wrapper">
           <nav class="mt-2">
-                        <!--begin::Sidebar Menu-->
-                        <ul
-                        class="nav sidebar-menu flex-column"
-                        data-lte-toggle="treeview"
-                        role="menu"
-                        data-accordion="false"
-                      > 
-                        <li class="nav-item">
-                          <a href="./index.html" class="nav-link">
-                            <i class="nav-icon bi bi-speedometer"></i>
-                            <p>Dashboard </p>
-                          </a>
-                        </li>
-                        <li class="nav-item menu-open">
-                          <a href="#" class="nav-link active">
-                            <i class="nav-icon bi bi-box-seam-fill"></i>
-                            <p>
-                              Customers
-                              <i class="nav-arrow bi bi-chevron-right"></i>
-                            </p>
-                          </a>
-                          <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                              <a href="customers.html" class="nav-link active">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>New Customer</p>
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a href="customers-view.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>View / Search Customer </p>
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a href="customers-contact-view.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>View / Search Contacts</p>
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a href="customers-contact-add.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>Contacts Add </p>
-                              </a>
-                            </li>
-                          </ul>
-                        </li> 
-          
-                        <li class="nav-item">
-                          <a href="./leads.html" class="nav-link">
-                            <i class="nav-icon bi bi-box-seam-fill"></i>
-                            <p>Leads </p>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./products.html" class="nav-link">
-                            <i class="nav-icon bi bi-box-seam-fill"></i>
-                            <p>Products </p>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./profile.html" class="nav-link">
-                            <i class="nav-icon bi bi-person"></i>
-                            <p>Profile</p>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./settings.html" class="nav-link">
-                            <i class="nav-icon bi bi-gear"></i>
-                            <p>Settings</p>
-                          </a>
-                        </li>
-                      </ul>
-                      <!--end::Sidebar Menu-->
+            <!--begin::Sidebar Menu-->
+            <ul
+              class="nav sidebar-menu flex-column"
+              data-lte-toggle="treeview"
+              role="menu"
+              data-accordion="false"
+            > 
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                  <i class="nav-icon bi bi-speedometer"></i>
+                  <p>Dashboard </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./customers.html" class="nav-link">
+                  <i class="nav-icon bi bi-box-seam-fill"></i>
+                  <p>Customers </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./leads.html" class="nav-link">
+                  <i class="nav-icon bi bi-box-seam-fill"></i>
+                  <p>Leads </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./products.html" class="nav-link">
+                  <i class="nav-icon bi bi-box-seam-fill"></i>
+                  <p>Products </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./profile.html" class="nav-link">
+                  <i class="nav-icon bi bi-person"></i>
+                  <p>Profile</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./settings.html" class="nav-link">
+                  <i class="nav-icon bi bi-gear"></i>
+                  <p>Settings</p>
+                </a>
+              </li>
+            </ul>
+            <!--end::Sidebar Menu-->
           </nav>
         </div>
         <!--end::Sidebar Wrapper-->
@@ -184,11 +154,11 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Sales Leads Form</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Products Form</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Sales Leads</li>
+                  <li class="breadcrumb-item active" aria-current="page">Products Leads</li>
                 </ol>
               </div>
             </div>
@@ -201,118 +171,29 @@
         <div class="app-content">
             <!--begin::Container-->
             <div class="container mt-5">
-              <!-- <h2 class="mb-4">Sales Leads Form</h2> --> 
+              <!-- <h2 class="mb-4">Products Form</h2> -->
               <form>
-              <div class="form-group">
-                <label for="inquiryDate">Inquiry Date</label>
-                <input type="date" class="form-control" id="inquiryDate">
-              </div>
-              <div class="form-group">
-                <label for="product">Product</label>
-                <select class="form-control" id="product" >
-                <option>Select product</option>
-                <option>Tin</option>
-                <option>Copper</option>
-                <option>Aluminum</option>
-                <option>Nickel</option>
-                <option>Zinc</option>
-                <option>Lead</option>
-                <option>Silver</option>
-                <option>Gold</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="customer">Customer</label>
-                <select class="form-control" id="customer">
-                <option>Select customer</option>
-                <option>ABC Corp</option>
-                <option>XYZ Ltd</option>
-                <option>Global Industries</option>
-                <option>Tech Solutions</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="contact">Contact</label>
-                <input type="text" class="form-control" id="contact" placeholder="Enter Contact Details "> 
-                <!-- #  add a button to popup contact selection
-                  -->
-                  <button type="button" class="btn btn-info btn-sm" onclick="openContactPopup()">Select Contact</button>
-
-              </div>              
-              <div class="form-group">
-                <label for="inquiredQty">Inquired Qty</label>
-                <input type="number" class="form-control" id="inquiredQty" placeholder="Enter inquired quantity">
-              </div>
-              <div class="form-group">
-                <label for="quotedPrice">Quoted Price</label>
-                <input type="number" class="form-control" id="quotedPrice" placeholder="Enter quoted price">
-              </div>
-              <div class="form-group">
-                <label for="finalQty">Final Qty (In Kgs)</label>
-                <input type="number" class="form-control" id="finalQty" placeholder="Enter final quantity">
-              </div>
-              <div class="form-group">
-                <label for="finalPrice">Final Price</label>
-                <input type="number" class="form-control" id="finalPrice" placeholder="Enter final price">
-              </div>
-              <div class="form-group">
-                <label for="orderStatus">Order Status</label>
-                <select class="form-control" id="orderStatus">
-                <option>Select order status</option>
-                <option>New</option>
-                <option>Processing</option>
-                <option>Shipped</option>
-                <option>Delivered</option>
-                <option>Cancelled</option>
-                <option>Returned</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="costPrice">Cost Price</label>
-                <input type="number" class="form-control" id="costPrice" placeholder="Enter cost price">
-              </div>
-              <div class="form-group">
-                <label for="pl">P&L</label>
-                <input type="number" class="form-control" id="pl" placeholder=" P&L">
-              </div>
-              <div class="form-group">
-                <label for="paymentTerms">Payment Terms</label>
-                <input type="text" class="form-control" id="paymentTerms" placeholder="Enter payment terms">
-              </div>
-              <div class="form-group">
-                <label for="lmeCost">LME Cost</label>
-                <input type="number" class="form-control" id="lmeCost" placeholder="Enter LME cost">
-              </div>
-              <div class="form-group">
-                <label for="marketPrice">Market Price</label>
-                <input type="number" class="form-control" id="marketPrice" placeholder="Enter market price">
-              </div>
-              <div class="form-group">
-                <label for="inquiryGeneratedBy">Inquiry Generated </label>
-                <select class="form-control" id="inquiryGeneratedBy">
-                  <option>Select inquiry generated by</option>
-                  <option>Direct</option>
-                  <option>Indirect</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inquiryStatus">Inquiry Status</label>
-                <select class="form-control" id="inquiryStatus">
-                <option>Select inquiry status</option>
-                <option>Close</option>
-                <option>Open</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="remarks">Remarks</label>
-                <textarea class="form-control" id="remarks" rows="3" placeholder="Enter remarks"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="inquiryClosedDate">Inquiry Closed Date</label>
-                <input type="date" class="form-control" id="inquiryClosedDate">
-              </div>
-              <hr>
-              <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                  <label for="productName">Product Name</label>
+                  <input type="text" class="form-control" id="productName" placeholder="Enter product name">
+                </div>
+                <div class="form-group">
+                  <label for="productCategory">Product Category</label>
+                  <input type="text" class="form-control" id="productCategory" placeholder="Enter product category">
+                </div>
+                <div class="form-group">
+                  <label for="productPrice">Product Price</label>
+                  <input type="number" class="form-control" id="productPrice" placeholder="Enter product price">
+                </div>
+                <div class="form-group">
+                  <label for="productStock">Product Stock</label>
+                  <input type="number" class="form-control" id="productStock" placeholder="Enter product stock">
+                </div>
+                <div class="form-group">
+                  <label for="productDescription">Product Description</label>
+                  <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter product description"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
             <!--end::Container-->
@@ -468,12 +349,6 @@
       integrity="sha256-/t1nN2956BT869E6H4V1dnt0X5pAQHPytli+1nTZm2Y="
       crossorigin="anonymous"
     ></script>
-    <script>
-      function openContactPopup() {
-        // Code to open a popup for contact selection
-        alert("Contact selection popup opened!");
-      }
-    </script>
 
   </body>
   <!--end::Body-->
