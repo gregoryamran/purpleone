@@ -196,81 +196,62 @@
               <div class="container mt-5">
                 <!-- <h2 class="mb-4">Customer Form</h2> -->
 
-                <!-- table for customer form    -->
-                <form>
-                    <!-- Add Customer button -->
-                    <div class="form-group">
-                    <div class="form-group mb-3"></div>
-                    <button type="button" class="btn btn-default btn-flat" id="addCustomer">Add Customer</button>
-                    <button type="button" class="btn btn-default" id="addCustomer">Add Contact</button>
-                    </div>                    
-                  <!-- table for customer form -->
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">Action</th>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer Company Name</th>
-                        <th scope="col">Customer GSTIN</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Website</th>
-                        <th scope="col">City</th>
-                        <th scope="col">State</th>
-                        <th scope="col">Zone</th>
-                        <th scope="col">Size</th>
-                        <!-- <th scope="col">Quantity per Month</th>
-                            <th scope="col">Quantity Can Tap</th>
-                            <th scope="col">Monthly Qty Supplied 23-24</th> -->
-                        <th scope="col">Industry</th>
-                        <!-- <th scope="col">Frequency</th>
-                        <th scope="col">From Warehouse</th>
-                        <th scope="col">Address and Pincode</th>
-                        <th scope="col">Merged Supplier</th>
-                        <th scope="col">Key Person Contact</th>
-                        <th scope="col">Key Person Name</th>
-                        <th scope="col">Converted</th>
-                        <th scope="col">Contacted Details</th>
-                        <th scope="col">Remarks</th>
-                        <th scope="col">ME</th> -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <!-- Example row -->
-                      <tr>
+                <div class="app-content">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-header">Add New Contact</div>
+                          <div class="card-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                              </div>
+                              <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                              </div>
+                              <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="designation">Designation</label>
+                                <input type="text" class="form-control" id="designation" placeholder="Enter designation">
+                              </div>
+                              <div class="form-group">
+                                <label for="role">Role</label>
+                                <select class="form-control" id="role">
+                                  <option>Select Role</option>
+                                  <option>Decision Maker</option>
+                                  <option>Influencer</option>
+                                  <option>Other</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="companyName">Company Name</label>
+                                <input type="text" class="form-control" id="companyName" placeholder="Enter company name">
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="isDecisionMaker">
+                                <label class="form-check-label" for="isDecisionMaker">Decision Maker</label>
+                              </div>
+                              <br />
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                              <br />
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                        <td>
-                          <button type="button" class="btn btn-default btn-sm">View</button>&nbsp;
-                          <button type="button" class="btn btn-warning btn-sm">Edit</button>&nbsp;
-                          <button type="button" class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                        <th scope="row">1</th>
-                        <td>Example Company</td>
-                        <td>1234567890</td>
-                        <td>123-456-7890</td>
-                        <td>www.example.com</td>
-                        <td>Example City</td>
-                        <td>Example State</td>
-                        <td>North</td>
-                        <td>Medium</td>
-                        <!-- <td>1000</td>
-                            <td>500</td>
-                            <td>12000</td> -->
-                        <td>Manufacturing</td>
-                        <!-- <td>Regular</td>
-                        <td>Example Warehouse</td>
-                        <td>123 Example St, 12345</td>
-                        <td>Example Supplier</td>
-                        <td>123-456-7890</td>
-                        <td>John Doe</td>
-                        <td>Yes</td>
-                        <td>Email</td>
-                        <td>Example remarks</td>
-                        <td>LME</td> -->
-                      </tr>
-                      <!-- Add more rows as needed -->
-                    </tbody>
-                  </table>
-                </form>
               </div>
             </div>
           </div>
