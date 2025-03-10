@@ -3,7 +3,7 @@
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>CRM | Dashboard</title>
+    <!-- <title>CRM | Dashboard</title> -->
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="AdminLTE v4 | Dashboard" />
@@ -96,39 +96,69 @@
         <!--begin::Sidebar Wrapper-->
         <div class="sidebar-wrapper">
           <nav class="mt-2">
-            <!--begin::Sidebar Menu-->
-            <ul
-              class="nav sidebar-menu flex-column"
-              data-lte-toggle="treeview"
-              role="menu"
-              data-accordion="false"
-            > 
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link">
-                  <i class="nav-icon bi bi-speedometer"></i>
-                  <p>Dashboard </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./customers.html" class="nav-link">
-                  <i class="nav-icon bi bi-box-seam-fill"></i>
-                  <p>Customers </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./leads.html" class="nav-link">
-                  <i class="nav-icon bi bi-box-seam-fill"></i>
-                  <p>Leads </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./products.html" class="nav-link">
-                  <i class="nav-icon bi bi-box-seam-fill"></i>
-                  <p>Products </p>
-                </a>
-              </li>
-            </ul>
-            <!--end::Sidebar Menu-->
+                        <!--begin::Sidebar Menu-->
+                        <ul
+                        class="nav sidebar-menu flex-column"
+                        data-lte-toggle="treeview"
+                        role="menu"
+                        data-accordion="false"
+                      > 
+                        <li class="nav-item">
+                          <a href="./index.html" class="nav-link">
+                            <i class="nav-icon bi bi-speedometer"></i>
+                            <p>Dashboard </p>
+                          </a>
+                        </li>
+                        <li class="nav-item menu-open">
+                          <a href="#" class="nav-link active">
+                            <i class="nav-icon bi bi-box-seam-fill"></i>
+                            <p>
+                              Customers
+                              <i class="nav-arrow bi bi-chevron-right"></i>
+                            </p>
+                          </a>
+                          <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                              <a href="customers.html" class="nav-link active">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>New Customer</p>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="customers-view.html" class="nav-link">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>View / Search Customer </p>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="customers-contact-view.html" class="nav-link">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>View / Search Contacts</p>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="customers-contact-add.html" class="nav-link">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Contacts Add </p>
+                              </a>
+                            </li>
+                          </ul>
+                        </li> 
+          
+                        <li class="nav-item">
+                          <a href="./leads.html" class="nav-link">
+                            <i class="nav-icon bi bi-box-seam-fill"></i>
+                            <p>Leads </p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./products.html" class="nav-link">
+                            <i class="nav-icon bi bi-box-seam-fill"></i>
+                            <p>Products </p>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Sidebar Menu-->
           </nav>
         </div>
         <!--end::Sidebar Wrapper-->
@@ -189,6 +219,14 @@
                 <option>Tech Solutions</option>
                 </select>
               </div>
+              <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="text" class="form-control" id="contact" placeholder="Enter Contact Details "> 
+                <!-- #  add a button to popup contact selection
+                  -->
+                  <button type="button" class="btn btn-info btn-sm" onclick="openContactPopup()">Select Contact</button>
+
+              </div>              
               <div class="form-group">
                 <label for="inquiredQty">Inquired Qty</label>
                 <input type="number" class="form-control" id="inquiredQty" placeholder="Enter inquired quantity">
@@ -418,6 +456,12 @@
       integrity="sha256-/t1nN2956BT869E6H4V1dnt0X5pAQHPytli+1nTZm2Y="
       crossorigin="anonymous"
     ></script>
+    <script>
+      function openContactPopup() {
+        // Code to open a popup for contact selection
+        alert("Contact selection popup opened!");
+      }
+    </script>
 
   </body>
   <!--end::Body-->
