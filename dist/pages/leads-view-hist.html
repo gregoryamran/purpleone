@@ -127,7 +127,7 @@
                 <i class="nav-icon bi bi-box-seam-fill"></i>
                 <p>Leads </p>
               </a>
-            </li> 
+            </li>
             <li class="nav-item">
               <a href="./products.html" class="nav-link">
                 <i class="nav-icon bi bi-box-seam-fill"></i>
@@ -183,141 +183,218 @@
       </div>
       <!--end::App Content Header-->
       <!--begin::App Content-->
+
+
       <div class="app-content">
 
 
+        
+            <!-- Timelime example  -->
+            <div class="row">
+              <div class="col-md-12">
+                <!-- The time line -->
+                <div class="timeline">
+                  <!-- timeline time label -->
+                  <div class="time-label"><span class="text-bg-danger">10 Feb. 2023</span></div>
+                  <!-- /.timeline-label -->
+                  <!-- timeline item -->
+                  <div>
+                    <i class="timeline-icon bi bi-envelope text-bg-primary"></i>
+                    <div class="timeline-item">
+                      <span class="time"> <i class="bi bi-clock-fill"></i> 12:05 </span>
+                      <h3 class="timeline-header">
+                        <a href="#">Support Team</a> sent you an email
+                      </h3>
+                      <div class="timeline-body">
+                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning
+                        heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo
+                        edmodo ifttt zimbra. Babblely odeo kaboodle quora plaxo ideeli hulu weebly
+                        balihoo...
+                      </div>
+                      <div class="timeline-footer">
+                        <a class="btn btn-primary btn-sm">Read more</a>
+                        <a class="btn btn-danger btn-sm">Delete</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END timeline item -->
+                  <!-- timeline item -->
+                  <div>
+                    <i class="timeline-icon bi bi-person text-bg-success"></i>
+                    <div class="timeline-item">
+                      <span class="time"> <i class="bi bi-clock-fill"></i> 5 mins ago </span>
+                      <h3 class="timeline-header no-border">
+                        <a href="#">Sarah Young</a> accepted your friend request
+                      </h3>
+                    </div>
+                  </div>
+                  <!-- END timeline item -->
+                  <!-- timeline item -->
+                  <div>
+                    <i class="timeline-icon bi bi-chat-text-fill text-bg-warning"></i>
+                    <div class="timeline-item">
+                      <span class="time"> <i class="bi bi-clock-fill"></i> 27 mins ago </span>
+                      <h3 class="timeline-header">
+                        <a href="#">Jay White</a> commented on your post
+                      </h3>
+                      <div class="timeline-body">
+                        Take me to your leader! Switzerland is small and neutral! We are more like
+                        Germany, ambitious and misunderstood!
+                      </div>
+                      <div class="timeline-footer">
+                        <a class="btn btn-warning btn-sm">View comment</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END timeline item -->
+                  <!-- timeline time label -->
+                  <div class="time-label"><span class="text-bg-success">3 Jan. 2023</span></div>
+                  <!-- /.timeline-label -->
+                  <!-- timeline item -->
+                  <div>
+                    <i class="timeline-icon bi bi-camera text-bg-primary"></i>
+                    <div class="timeline-item">
+                      <span class="time"> <i class="bi bi-clock-fill"></i> 2 days ago </span>
+                      <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+                      <div class="timeline-body">
+                        <img src="../../../dist/assets/img/user1-128x128.jpg" alt="..." />
+                        <img src="../../../dist/assets/img/user1-128x128.jpg" alt="..." />
+                        <img src="../../../dist/assets/img/user1-128x128.jpg" alt="..." />
+                        <img src="../../../dist/assets/img/user1-128x128.jpg" alt="..." />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END timeline item -->
+                  <!-- timeline item -->
+                  <div>
+                    <i class="timeline-icon bi bi-camera-film text-bg-info"></i>
+                    <div class="timeline-item">
+                      <span class="time"> <i class="bi bi-clock-fill"></i> 5 days ago </span>
+                      <h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
+                      <div class="timeline-body">
+                        <div class="ratio ratio-16x9">
+                          <iframe
+                            src="https://www.youtube.com/embed/tMWkeBIohBs"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div class="timeline-footer">
+                        <a href="#" class="btn btn-sm text-bg-warning"> See comments </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END timeline item -->
+                  <div><i class="timeline-icon bi bi-clock-fill text-bg-secondary"></i></div>
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
         <div class="d-flex justify-content-between align-items-center">
 
-          <a href="leads-view.html" class="btn btn-primary">
-            <i class="bi bi-plus-circle"></i> View Leads
+          <a href="leads.html" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add New Lead
           </a>
         </div>
 
 
 
-        <!--begin::Container-->
         <div class="container mt-5">
-          <!-- <h2 class="mb-4">Sales Leads Form</h2> -->
-          <form>
-            <div class="form-group">
-              <label for="salesperson">Sales Person</label>
-              <input type="text" class="form-control" id="salesperson" placeholder="Enter sales person name">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Leads List</h3>
+              <div class="card-tools">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="searchLead" placeholder="Search leads...">
+                  </div>
+                  <div class="col-md-6">
+                    <select class="form-control" id="companyFilter">
+                      <option value="">Filter by Company</option>
+                      <option value="ABC Corp">ABC Corp</option>
+                      <option value="XYZ Ltd">XYZ Ltd</option>
+                      <option value="123 Industries">123 Industries</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="inquiryDate">Inquiry Date</label>
-              <input type="date" class="form-control" id="inquiryDate">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th>Lead ID</th>
+                      <th>Company Name</th>
+                      <th>Contact Person</th>
+                      <th>Product Interest</th>
+                      <th>Status</th>
+                      <th>Inquiry Date</th>
+                      <th>Sales Agent</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>L001</td>
+                      <td>ABC Corp</td>
+                      <td>John Smith</td>
+                      <td>Tin</td>
+                      <td><span class="badge bg-warning">New</span></td>
+                      <td>2024-03-10</td>
+                      <td>Jane Doe</td>
+                      <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-success">Convert</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>L002</td>
+                      <td>XYZ Ltd</td>
+                      <td>Mary Johnson</td>
+                      <td>Copper</td>
+                      <td><span class="badge bg-info">In Progress</span></td>
+                      <td>2024-03-09</td>
+                      <td>John Doe</td>
+                      <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-success">Convert</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="product">Product</label>
-              <select class="form-control" id="product">
-                <option>Select product</option>
-                <option>Tin</option>
-                <option>Copper</option>
-                <option>Aluminum</option>
-                <option>Nickel</option>
-                <option>Zinc</option>
-                <option>Lead</option>
-                <option>Silver</option>
-                <option>Gold</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="customer">Customer</label>
-              <select class="form-control" id="customer">
-                <option>Select customer</option>
-                <option>ABC Corp</option>
-                <option>XYZ Ltd</option>
-                <option>Global Industries</option>
-                <option>Tech Solutions</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="contact">Contact</label>
-              <input type="text" class="form-control" id="contact" placeholder="Enter Contact Details ">
-              <!-- #  add a button to popup contact selection
-                  -->
-              <button type="button" class="btn btn-info btn-sm" onclick="openContactPopup()">Select Contact</button>
-
-            </div>
-            <div class="form-group">
-              <label for="inquiredQty">Inquired Qty</label>
-              <input type="number" class="form-control" id="inquiredQty" placeholder="Enter inquired quantity">
-            </div>
-            <div class="form-group">
-              <label for="quotedPrice">Quoted Price</label>
-              <input type="number" class="form-control" id="quotedPrice" placeholder="Enter quoted price">
-            </div>
-            <div class="form-group">
-              <label for="finalQty">Final Qty (In Kgs)</label>
-              <input type="number" class="form-control" id="finalQty" placeholder="Enter final quantity">
-            </div>
-            <div class="form-group">
-              <label for="finalPrice">Final Price</label>
-              <input type="number" class="form-control" id="finalPrice" placeholder="Enter final price">
-            </div>
-            <div class="form-group">
-              <label for="orderStatus">Order Status</label>
-              <select class="form-control" id="orderStatus">
-                <option>Select order status</option>
-                <option>New</option>
-                <option>Processing</option>
-                <option>Shipped</option>
-                <option>Delivered</option>
-                <option>Cancelled</option>
-                <option>Returned</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="costPrice">Cost Price</label>
-              <input type="number" class="form-control" id="costPrice" placeholder="Enter cost price">
-            </div>
-            <div class="form-group">
-              <label for="pl">P&L</label>
-              <input type="number" class="form-control" id="pl" placeholder=" P&L">
-            </div>
-            <div class="form-group">
-              <label for="paymentTerms">Payment Terms</label>
-              <input type="text" class="form-control" id="paymentTerms" placeholder="Enter payment terms">
-            </div>
-            <div class="form-group">
-              <label for="lmeCost">LME Cost</label>
-              <input type="number" class="form-control" id="lmeCost" placeholder="Enter LME cost">
-            </div>
-            <div class="form-group">
-              <label for="marketPrice">Market Price</label>
-              <input type="number" class="form-control" id="marketPrice" placeholder="Enter market price">
-            </div>
-            <div class="form-group">
-              <label for="inquiryGeneratedBy">Inquiry Generated </label>
-              <select class="form-control" id="inquiryGeneratedBy">
-                <option>Select inquiry generated by</option>
-                <option>Direct</option>
-                <option>Indirect</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="inquiryStatus">Inquiry Status</label>
-              <select class="form-control" id="inquiryStatus">
-                <option>Select inquiry status</option>
-                <option>Close</option>
-                <option>Open</option>
-                <option>Cancelled</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="remarks">Remarks</label>
-              <textarea class="form-control" id="remarks" rows="3" placeholder="Enter remarks"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="inquiryClosedDate">Inquiry Closed Date</label>
-              <input type="date" class="form-control" id="inquiryClosedDate">
-            </div>
-            <hr>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          </div>
         </div>
-        <!--end::Container-->
       </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const searchInput = document.getElementById('searchLead');
+          const companyFilter = document.getElementById('companyFilter');
+
+          searchInput.addEventListener('keyup', filterLeads);
+          companyFilter.addEventListener('change', filterLeads);
+
+          function filterLeads() {
+            const searchText = searchInput.value.toLowerCase();
+            const companyValue = companyFilter.value.toLowerCase();
+            const rows = document.querySelectorAll('tbody tr');
+
+            rows.forEach(row => {
+              const companyName = row.children[1].textContent.toLowerCase();
+              const leadText = row.textContent.toLowerCase();
+
+              const matchesSearch = leadText.includes(searchText);
+              const matchesCompany = companyValue === '' || companyName === companyValue;
+
+              row.style.display = matchesSearch && matchesCompany ? '' : 'none';
+            });
+          }
+        });
+      </script>
       <!--end::App Content-->
     </main>
     <!--end::App Main-->
