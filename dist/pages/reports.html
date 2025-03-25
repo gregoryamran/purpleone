@@ -204,7 +204,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#salesArea" data-bs-toggle="tab">
-              <i class="bi bi-geo-alt"></i> Sales by Area
+              <i class="bi bi-geo-alt"></i> Sales by Zone
             </a>
           </li>
           <li class="nav-item">
@@ -280,26 +280,24 @@
       </div>
       
       <div class="tab-pane fade" id="salesArea">
-        <!-- Existing Sales by Area content -->
-              <!--begin::App Content  create a new report section for sales by area. -->
+        <!-- Existing Sales by Zone content -->
+              <!--begin::App Content  create a new report section for sales by Zone. -->
 
       <div class="app-content">
         <div class="container-fluid">
-          <!-- Sales by Area Chart -->
+          <!-- Sales by Zone Chart -->
           <div class="row">
             <div class="col-12">
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Sales by Area</h3>
+                  <h3 class="card-title">Sales by Zone</h3>
                   <div class="card-tools">
-                     <select class="form-select" id="productRange">
-                      <option value="">Tin</option>
-                      <option value="lastQuarter">Cooper</option> 
-                    </select>
+                     
                     <select class="form-select" id="timeRangeArea">
-                      <option value="lastMonth">Last Month</option>
-                      <option value="lastQuarter">Last Quarter</option>
-                      <option value="lastYear" selected>Last Year</option>
+                      <option value="lastMonth" selected>Last Month</option>
+                      <option value="lastQuarter">Last 3 month</option>
+                      <option value="lastYear" >Last FY Year</option>
+                      <option value="custom" >Custom Period</option>
                     </select>
                   </div>
                 </div>
@@ -378,11 +376,11 @@
             },
             yaxis: {
               title: {
-                text: 'Sales Amount (₹)'
+                text: 'Sales Volume'
               }
             },
             title: {
-              text: 'Monthly Sales by Area',
+              text: 'Monthly Sales by Zone',
               align: 'left'
             },
             colors: ['#0d6efd', '#20c997', '#ffc107', '#dc3545']
@@ -412,10 +410,16 @@
                 <div class="card-header">
                   <h3 class="card-title">Products Performance</h3>
                   <div class="card-tools">
-                    <select class="form-select" id="timeRangeProducts">
-                      <option value="lastMonth">Last Month</option>
-                      <option value="lastQuarter">Last Quarter</option>
-                      <option value="lastYear" selected>Last Year</option>
+                    <select class="" id="productRange">
+                      <option value="">Tin</option>
+                      <option value="lastQuarter">Cooper</option> 
+                    </select>
+                    <select class="" id="timeRangeProducts">
+                      
+                      <option value="lastMonth selected">Last Month</option>
+                      <option value="lastQuarter">Last 3 Months</option>
+                      <option value="lastYear" >Last FY Year</option>
+                      <option value="custom" >Custom Period</option>
                     </select>
                   </div>
                 </div>
@@ -697,7 +701,7 @@
         },
         yaxis: {
           title: {
-            text: 'Sales Amount ($)'
+            text: 'Sales Volume '
           }
         },
         title: {
