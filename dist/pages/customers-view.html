@@ -141,7 +141,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="./leads.html" class="nav-link">
+              <a href="./leads-view.html" class="nav-link">
                 <i class="nav-icon bi bi-box-seam-fill"></i>
                 <p>Leads </p>
               </a>
@@ -150,6 +150,12 @@
               <a href="./products.html" class="nav-link">
                 <i class="nav-icon bi bi-box-seam-fill"></i>
                 <p>Products </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./tasks.html" class="nav-link active">
+              <i class="nav-icon bi bi-list"></i>
+              <p>Tasks </p>
               </a>
             </li>
             <li class="nav-item">
@@ -214,8 +220,49 @@
                     <!-- Add Customer button -->
                     <div class="form-group">
                     <div class="form-group mb-3"></div>
-                    <button type="button" class="btn btn-default btn-flat" id="addCustomer">Add Customer</button>
-                    <button type="button" class="btn btn-default" id="addCustomer">Add Contact</button>
+                    <button type="button" class="btn btn-primary btn-flat" id="addCustomer">Add Customer</button>&nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" id="addContact">Add Contact</button>&nbsp; &nbsp; 
+                    <div class="text-right">
+                      <br>
+                      &nbsp; &nbsp; 
+                    Zone: 
+                    <!-- inline zone dropdown 
+                     -->
+                    <select class="inline" id="zone" name="zone">
+                      <option value="north">North</option>
+                      <option value="south">South</option>
+                      <option value="east">East</option>
+                      <option value="west">West</option>
+                    </select>
+                    &nbsp; &nbsp;
+                    State:
+                    <select class="" id="state" name="state">
+                      <option value="andhra">Andhra Pradesh</option>
+                      <option value="telangana">Telangana</option>
+                      <option value="tamilnadu">Tamil Nadu</option>
+                      <option value="karnataka">Karnataka</option>
+                    </select>&nbsp; &nbsp;
+                    City: 
+                    <select class="" id="city" name="city">
+                      <option value="hyderabad">Hyderabad</option>
+                      <option value="bangalore">Bangalore</option>
+                      <option value="chennai">Chennai</option>
+                      <option value="mumbai">Mumbai</option>
+                    </select>&nbsp; &nbsp;
+                    Size: 
+                    <select class="" id="size" name="size">
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                    </select>&nbsp; &nbsp;
+                    Industry:
+                    <select class="" id="industry" name="industry">
+                      <option value="manufacturing">Manufacturing</option>
+                      <option value="service">Service</option>
+                      <option value="retail">Retail</option>
+                    </select>&nbsp; &nbsp;                    
+                    <button type="button" class="btn btn-primary" id="lblSearcl">Search </button>&nbsp; &nbsp; 
+                    </div>
                     </div>                    
                   <!-- table for customer form -->
                   <table class="table table-striped">

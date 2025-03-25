@@ -123,7 +123,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="./leads.html" class="nav-link">
+              <a href="./leads-view.html" class="nav-link">
                 <i class="nav-icon bi bi-box-seam-fill"></i>
                 <p>Leads </p>
               </a>
@@ -132,6 +132,12 @@
               <a href="./products.html" class="nav-link">
                 <i class="nav-icon bi bi-box-seam-fill"></i>
                 <p>Products </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./tasks.html" class="nav-link active">
+              <i class="nav-icon bi bi-list"></i>
+              <p>Tasks </p>
               </a>
             </li>
             <li class="nav-item">
@@ -256,18 +262,6 @@
               <input type="number" class="form-control" id="finalPrice" placeholder="Enter final price">
             </div>
             <div class="form-group">
-              <label for="orderStatus">Order Status</label>
-              <select class="form-control" id="orderStatus">
-                <option>Select order status</option>
-                <option>New</option>
-                <option>Processing</option>
-                <option>Shipped</option>
-                <option>Delivered</option>
-                <option>Cancelled</option>
-                <option>Returned</option>
-              </select>
-            </div>
-            <div class="form-group">
               <label for="costPrice">Cost Price</label>
               <input type="number" class="form-control" id="costPrice" placeholder="Enter cost price">
             </div>
@@ -299,15 +293,16 @@
               <label for="inquiryStatus">Inquiry Status</label>
               <select class="form-control" id="inquiryStatus">
                 <option>Select inquiry status</option>
-                <option>Close</option>
                 <option>Open</option>
+                <option>Pending</option>
+                <option>Close</option>
                 <option>Cancelled</option>
               </select>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="remarks">Remarks</label>
               <textarea class="form-control" id="remarks" rows="3" placeholder="Enter remarks"></textarea>
-            </div>
+            </div> -->
             <div class="form-group">
               <label for="inquiryClosedDate">Inquiry Closed Date</label>
               <input type="date" class="form-control" id="inquiryClosedDate">
